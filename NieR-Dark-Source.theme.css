@@ -12,19 +12,80 @@
  * @patreon https://www.patreon.com/accrazed
  * @authorId 153562159161278473
  */
-/*
- *  :::.       .,-:::::   .,-::::: :::::::..    :::.     :::::::::.,:::::::::::::-.  
- *  ;;`;;    ,;;;'````' ,;;;'````' ;;;;``;;;;   ;;`;;    '`````;;;;;;;'''' ;;,   `';,
- * ,[[ '[[,  [[[        [[[         [[[,/[[['  ,[[ '[[,      .n[[' [[cccc  `[[     [[
- * c$$$cc$$$c $$$        $$$         $$$$$$c   c$$$cc$$$c   ,$$P"   $$""""   $$,    $$
- * 888   888,`88bo,__,o,`88bo,__,o, 888b "88bo,888   888,,888bo,_  888oo,__ 888_,o8P'
- * YMM   ""`   "YUMMMMMP" "YUMMMMMP"MMMM   "W" YMM   ""`  `""*UMM  """"YUMMMMMMMP"`  
- */
 
-@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/font/stylesheet.css"); /* Font */
-@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/NieR-Cursor.css"); /* Cursor */
-@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/NieR-Import.theme.css"); /* Main File */
-@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/DarkImport.theme.css"); /* Dark Part of Theme */
+ /* Font */
+
+@font-face {
+  font-family: 'sce-ps3_rodin_latinregular';
+  src: url('sce-ps3-rd-i-latin-webfont.woff2') format('woff2'),
+      url('sce-ps3-rd-i-latin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sce-ps3_rodin_latinregular';
+  src: url('sce-ps3-rd-bi-latin-webfont.woff2') format('woff2'),
+      url('sce-ps3-rd-bi-latin-webfont.woff') format('woff');
+  font-weight: italic;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'sce-ps3_rodin_latinregular';
+  src: url('sce-ps3-rd-b-latin-webfont.woff2') format('woff2'),
+      url('sce-ps3-rd-b-latin-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sce-ps3_rodin_latinregular';
+  src: url('sce-ps3-rd-r-latin-webfont.woff2') format('woff2'),
+      url('sce-ps3-rd-r-latin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main File */
+
+@import url("https://accrazed.github.io/YoRHA-UI-BetterDiscord/NieR-Import.theme.css"); 
+
+/* Dark Part of Theme */
+
+#app-mount {
+  background: url("https://raw.githubusercontent.com/AccraZed/YoRHA-UI-BetterDiscord/master/assets/wallpapers/dark-theme-1440.png")
+      center/cover no-repeat;
+}
+.homeIcon-r0w4ny {
+  background: url("https://raw.githubusercontent.com/AccraZed/YoRHA-UI-BetterDiscord/master/assets/icons/home_dark-theme.png")
+      center/contain no-repeat;
+}
+#app-mount:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+          to right,
+          rgba(218, 212, 187, 0.05),
+          transparent 30%,
+          transparent 80%,
+          rgba(218, 212, 187, 0.05)
+      ),
+      radial-gradient(transparent 50%, rgba(218, 212, 187, 0.1));
+  user-select: none;
+  pointer-events: none;
+}
+.theme-dark .mentioned-Tre-dv a.anchor-1MIwyf {
+  background-color: var(--color-low-trans);
+  border-radius: 0.25em;
+}
+::selection {
+  background-color: var(--color-alert);
+  color: var(--color-low);
+}
 
 /* GLOBAL VARIABLES */
 :root {
